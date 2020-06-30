@@ -20,6 +20,7 @@ Contextbuilder.Java include GID projection, initiate agents and butch runs
 Output.Java export excel results
 
 Note that GIS and feeder files are removed since these data are prioritory. 
+
 Files you will need in order to run the study: 
-Nodes.shp for electricity grid nodes
-Parcels.shp for land parcels 
+- Nodes.shp for electricity grid nodes
+- Parcels.shp for land parcels 
