@@ -12,7 +12,9 @@ Run Priority:
 4. Resident.Java
 
 ParcelStation.Java is for charging station agent
+
 Node.Java is for distirbution feeder model
+
 Contextbuilder.Java include GID projection, initiate agents and butch runs 
 
 Output.Java export excel results
