@@ -17,7 +17,7 @@ Node.Java is for distirbution feeder model
 
 Contextbuilder.Java include GID projection, initiate agents and butch runs 
 
-Output.Java export excel results
+createxcel.Java export excel results
 
 Note that GIS and feeder files are removed since these data are prioritory. 
 
