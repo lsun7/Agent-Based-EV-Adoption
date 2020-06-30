@@ -1,7 +1,7 @@
 # Agent-Based-EV-Adoption
 Repast Simphony Agent Based EV Adoption Model
 
-The model is originally built started with referncing the JZombies_Demo model.
+The model started with the JZombies_Demo model developed by Argonne national laboratory. 
 
 GIS and feeder files are removed since these data are prioritory. 
 
