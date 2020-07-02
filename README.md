@@ -1,8 +1,6 @@
 # Agent-Based-EV-Adoption
 Repast Simphony Agent Based EV Adoption Model
 
-The model started with the JZombies_Demo model developed by Argonne National Laboratory. 
-
 Agents in the model: EV, ICE, Land Parcels, Charging Stations, EV Market
 
 Run Priority:
@@ -15,7 +13,7 @@ ParcelStation.Java is for charging station agent
 
 Node.Java is for distirbution feeder model
 
-Contextbuilder.Java include GID projection, initiate agents and butch runs 
+Contextbuilder.Java include GIS projection, initiate agents and butch runs 
 
 createxcel.Java export excel results
 
