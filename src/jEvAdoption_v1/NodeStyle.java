@@ -22,6 +22,7 @@ import repast.simphony.visualization.gis3D.style.MarkStyle;
  *   based on their water value.
  * 
  * @author Eric Tatara
+ * @revised by Lisha
  *
  */
 public class NodeStyle implements MarkStyle<Node>{
