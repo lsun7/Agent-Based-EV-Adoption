@@ -31,21 +31,10 @@ public class ResidentEVStyle implements MarkStyle<ResidentEV>{
 	
 	public ResidentEVStyle(){
 		
-		/**
-		 * The gov.nasa.worldwind.render.Offset is used to position the label from 
-		 *   the mark point location.  The first two arguments in the Offset 
-		 *   constructor are the x and y offset values.  The third and fourth 
-		 *   arguments are the x and y units for the offset. AVKey.FRACTION 
-		 *   represents units of the image texture size, with 1.0 being one image 
-		 *   width/height.  AVKey.PIXELS can be used to specify the offset in pixels. 
-		 */
+
 		labelOffset = new Offset(1.2d, 0.6d, AVKey.FRACTION, AVKey.FRACTION);
 		
-		/**
-		 * Use of a map to store textures significantly reduces CPU and memory use
-		 * since the same texture can be reused.  Textures can be created for different
-		 * agent states and re-used when needed.
-		 */
+
 		textureMap = new HashMap<String, WWTexture>();
 		
 		BufferedImage image = PatternFactory.createPattern(PatternFactory.PATTERN_CIRCLE, 
@@ -74,12 +63,7 @@ public class ResidentEVStyle implements MarkStyle<ResidentEV>{
 		if (mark == null)
 			mark = new PlaceMark();
 		
-		/**
-		 * The Altitude mode determines how the mark appears using the elevation.
-		 *   WorldWind.ABSOLUTE places the mark at elevation relative to sea level
-		 *   WorldWind.RELATIVE_TO_GROUND places the mark at elevation relative to ground elevation
-		 *   WorldWind.CLAMP_TO_GROUND places the mark at ground elevation
-		 */
+
 		mark.setAltitudeMode(WorldWind.RELATIVE_TO_GROUND);
 		mark.setLineEnabled(false);
 		
