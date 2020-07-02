@@ -19,10 +19,6 @@ import repast.simphony.visualization.gis3D.style.MarkStyle;
 
 /**
  * Style for Residents.  
- * 
- * @author Eric Tatara
- * @Revised Lisha Sun
- *
  */
 public class ResidentStyle implements MarkStyle<Resident>{
 	
