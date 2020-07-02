@@ -18,11 +18,7 @@ import repast.simphony.visualization.gis3D.PlaceMark;
 import repast.simphony.visualization.gis3D.style.MarkStyle;
 
 /**
- * Style for Nodes.  This demo style changes the appearance of the Nodes
- *   based on their water value.
- * 
- * @author Eric Tatara
- * @revised by Lisha
+ * Style for Nodes.  
  *
  */
 public class NodeStyle implements MarkStyle<Node>{
@@ -78,37 +74,20 @@ public class NodeStyle implements MarkStyle<Node>{
 		if (mark == null)
 			mark = new PlaceMark();
 		
-		/**
-		 * The Altitude mode determines how the mark appears using the elevation.
-		 *   WorldWind.ABSOLUTE places the mark at elevation relative to sea level
-		 *   WorldWind.RELATIVE_TO_GROUND places the mark at elevation relative to ground elevation
-		 *   WorldWind.CLAMP_TO_GROUND places the mark at ground elevation
-		 */
 		mark.setAltitudeMode(WorldWind.RELATIVE_TO_GROUND);
 		mark.setLineEnabled(false);
 		
 		return mark;
 	}
 	
-	/**
-	 * Get the mark elevation in meters.  The elevation is used to visually offset 
-	 *   the mark from the surface and is not an inherent property of the agent's 
-	 *   location in the geography.
-	 */
+
 	@Override
 	public double getElevation(Node agent) {
 			return 0;
 	}
 	
 	/**
-	 * Here we set the appearance of the Node.  In this style implementation,
-	 *   the style class creates a new BufferedImage each time getTexture is 
-	 *   called.  If the texture never changes, the texture argument can just be 
-	 *   checked for null value, created once, and then just returned every time 
-	 *   thereafter.  If there is a small set of possible values for the texture,
-	 *   eg. blue circle, and GREEN circle, those BufferedImages could 
-	 *   be stored here and re-used by returning the appropriate image based on 
-	 *   the agent properties. 
+	 * Here we set the appearance of the Node.
 	 */
 	@Override
 	public WWTexture getTexture(Node agent, WWTexture texture) {
