@@ -14,7 +14,7 @@ import java.net.URL;
 import repast.simphony.visualization.gis3D.style.DefaultMarkStyle;
 
 /**
- * Style for Tower Agents.
+ * Style for charging station.
  * 
  * @author Lisha Sun
  *
@@ -35,7 +35,7 @@ public class ParcelStationStyle extends DefaultMarkStyle<ParcelStation>{
 	Offset iconOffset = new Offset(0.5d, 0.5d, AVKey.FRACTION, AVKey.FRACTION);
 	
 	/**
-	 * Here we set the appearance of the TowerAgent using a non-changing icon.
+	 * Here we set the appearance of the EV Charging Station using a non-changing icon.
 	 */
 	@Override
 	public WWTexture getTexture(ParcelStation agent, WWTexture texture) {
