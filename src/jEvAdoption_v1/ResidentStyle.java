@@ -18,10 +18,10 @@ import repast.simphony.visualization.gis3D.PlaceMark;
 import repast.simphony.visualization.gis3D.style.MarkStyle;
 
 /**
- * Style for Residents.  This demo style changes the appearance of the Residents
- *   based on their water value.
+ * Style for Residents.  
  * 
  * @author Eric Tatara
+ * @Revised Lisha Sun
  *
  */
 public class ResidentStyle implements MarkStyle<Resident>{
@@ -87,25 +87,14 @@ public class ResidentStyle implements MarkStyle<Resident>{
 		return mark;
 	}
 	
-	/**
-	 * Get the mark elevation in meters.  The elevation is used to visually offset 
-	 *   the mark from the surface and is not an inherent property of the agent's 
-	 *   location in the geography.
-	 */
+
 	@Override
 	public double getElevation(Resident agent) {
 			return 0;
 	}
 	
 	/**
-	 * Here we set the appearance of the Resident.  In this style implementation,
-	 *   the style class creates a new BufferedImage each time getTexture is 
-	 *   called.  If the texture never changes, the texture argument can just be 
-	 *   checked for null value, created once, and then just returned every time 
-	 *   thereafter.  If there is a small set of possible values for the texture,
-	 *   eg. blue circle, and yellow circle, those BufferedImages could 
-	 *   be stored here and re-used by returning the appropriate image based on 
-	 *   the agent properties. 
+	 * Here we set the appearance of the Resident.  
 	 */
 	@Override
 	public WWTexture getTexture(Resident agent, WWTexture texture) {
